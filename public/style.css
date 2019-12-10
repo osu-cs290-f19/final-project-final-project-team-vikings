@@ -69,7 +69,7 @@ header a {
 	padding: 10px;
 }
 
-input[type=text], select, fieldset {
+input[type=text], select, fieldset, button {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
