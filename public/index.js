@@ -22,8 +22,10 @@ document.getElementById("question-4").addEventListener('input', question4Functio
 function question2Function(){
 	if(drive[0].checked){
 		console.log("==Im printing from inside this function2"); // print
-		driveDistance.style.display = 'block'; 					 //try and display the second question
+		//driveDistance.style.display = 'none'; 					 //try and display the second question
 		document.getElementById('question-2').style.display = 'none'; 	//hide the initial question
+		document.getElementById('test123').style.display = 'block';
+		calculateHowGreen();
 	}
 }
 
@@ -41,4 +43,8 @@ function question4Function(){
 		flyFrequency.style.display = 'block';
 		document.getElementById('question-4').style.display = 'none';
 	}
+}
+
+function calculateHowGreen(){
+	console.log("howGreen: ", driveDistance.value);
 }
