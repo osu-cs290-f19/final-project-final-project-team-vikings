@@ -29,7 +29,7 @@ document.getElementById("question-4").addEventListener('input', question4Functio
 function question2Function(){
 	if(drive[0].checked){
 		console.log("==Im printing from inside this function2");
-		driveDistance.style.display = 'block';
+		driveDistance.style.display = 'inline';
 	}
 }
 
