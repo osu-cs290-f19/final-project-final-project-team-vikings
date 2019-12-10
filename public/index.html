@@ -58,12 +58,12 @@
             <div class="variable-input-element">
               <select id="question-2-followup" class="filter-input" name="question-2-followup">
                 <option selected value="">Any</option>
-                <option>Less than 10</option>
-                <option>11-20</option>
-                <option>21-30</option>
-                <option>31-40</option>
-                <option>41-50</option>
-                <option>More than 50</option>
+                <option>10km or less</option>
+                <option>11-20km</option>
+                <option>21-30km</option>
+                <option>31-40km</option>
+                <option>41-50km</option>
+                <option>50 or more</option>
               </select>
             </div>
           </div>
@@ -72,11 +72,11 @@
             <fieldset id="question-3" class="filter-fieldset">
               <legend>Do you eat animal products?</legend>
               <div>
-                <input type="radio" name="question-3" id="question-3-yes" value="Yes">
+                <input type="radio" name="question-3" id="question-3-yes" value="Yes" class = "yes-no-radio">
                 <label for="question-3-yes">Yes</label>
               </div>
               <div>
-                <input type="radio" name="question-3" id="question-3-no" value="No">
+                <input type="radio" name="question-3" id="question-3-no" value="No" class = "yes-no-radio">
                 <label for="question-3-no">No</label>
               </div>
             </fieldset>
@@ -88,37 +88,38 @@
               <select id="question-3-followup" class="filter-input" name="question-3-followup">
                 <option selected value="">Any</option>
                 <option>Less than 10</option>
-                <option>1-3</option>
+                <option>3 or less</option>
                 <option>4-6</option>
                 <option>7-9</option>
                 <option>10-12</option>
-                <option>More</option>
+                <option>13-15</option>
+                <option>16-18</option>
+                <option>19 or more</option>
+
               </select>
             </div>
           </div>
 
-
-          <div class="filter-input-container">
-            <label for="meat-per-week" class="variable-input-label">How many times a week do you eat meat?</label>
-            <div class="variable-input-element">
-              <input type="text" name="meat-per-week" id="meat-per-week" class="filter-input" placeholder="Input approximate">
-            </div>
-
-
-          <div class="filter-input-container">
-            <label for="flights-per-year">How many times a year do you fly?</label>
-            <div class="variable-input-element">
-              <select id="flights-per-year" class="filter-input" name="flights-per-year">
-                <option selected value="">Any</option>
-                <option>1-2</option>
-                <option>3-4</option>
-                <option>5-6</option>
-                <option>7-8</option>
-                <option>9-10</option>
-              </select>
-            </div>
+          <div class="question-4">
+            <fieldset id="question-4" class="filter-fieldset">
+              <legend>Do ever fly?</legend>
+              <div>
+                <input type="radio" name="question-4" id="question-4-yes" value="Yes" class = "yes-no-radio">
+                <label for="question-4-yes">Yes</label>
+              </div>
+              <div>
+                <input type="radio" name="question-4" id="question-4-no" value="No" class = "yes-no-radio">
+                <label for="question-4-no">No</label>
+              </div>
+            </fieldset>
           </div>
 
+          <div class="question-4-followup">
+            <label for="flights-per-year">How many times a year do you fly on average?</label>
+            <div class="variable-input-element">
+              <input type="text" name="question-4-followup" id="question-4-followup" class="variable-input">
+            </div>
+          </div>
 
         </aside>
       </main>
