@@ -16,7 +16,7 @@ var flyFrequency = document.getElementById('question-4-followup');
 //
 var drivenResult = document.getElementById('question-2-followup-select');
 var meatEaten =  document.getElementById('question-3-followup-select');
-var FlyingAmount =  document.getElementById('question-4-followup-select');
+var flyingAmount =  document.getElementById('question-4-followup-select');
 
 //eventlistener
 document.getElementById("question-2").addEventListener('input', question2Function);
@@ -53,8 +53,10 @@ function question4Function(){
 }
 
 function calculateHowGreen(){
-	var k;
-	console.log("howGreen: ", drivenResult.value);
-	console.log("obj.selectedIndex", drivenResult.selectedIndex);
-
+	var driven = drivenResult.selectedIndex;
+	var eaten = meatEaten.selectedIndex;
+	var fly = flyingAmount.value;
+	var k;// = drivenResult.selectedIndex + meatEaten.selectedIndex;// + flyingAmount.value;
+	k = parseInt(driven) + parseInt(eaten) + parseInt(fly);
+	console.log("totalpoints : ", k);	
 }
