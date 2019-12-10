@@ -32,6 +32,22 @@ app.get('*', function (req, res) {
   //404
 });
 */
+function requestHandler(req, res){
+	var pathToHtml = '/public/index.html';
+	readFileHTMLPath(pathToHtml, res);
+	}
+}
+
+function readFileHTMLPath(pathToHtml,res) {
+fs.readFile(pathToHtml, 'utf-8',function (err, pathToHtml) {
+	if (err) {
+		throw err; 
+	}
+	res.writeHeader(200, {"Content-Type": "text/html"});  
+	res.write(pathToHtml);
+	res.end();
+	});
+}
 
 //port
 app.listen(port, function () {
