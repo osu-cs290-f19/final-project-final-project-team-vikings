@@ -25,6 +25,18 @@ header a {
   color: green;
 }
 
+.action-button:hover {
+  background-color: #f9d2b2;
+  border-color: #333;
+  color: #333;
+}
+
+#check-score-button{
+  background-color: #4EC316;
+  width: 30%;
+  height: 20%;
+}
+
 .site-title {
   font-family: "Georgia", serif;
   font-size: 80px;
