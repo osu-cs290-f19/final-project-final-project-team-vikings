@@ -39,7 +39,6 @@ function question2Function(){
 function question3Function(){
 	if(eatAnimals[0].checked){
 		meatFrequency.style.display = 'block';
-		calculateHowGreen();
 	}
 	else if(drive[1].checked){
 		meatFrequency.style.display = 'none';
