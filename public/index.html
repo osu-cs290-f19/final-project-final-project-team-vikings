@@ -28,11 +28,11 @@
             <fieldset id="question-1" class="filter-fieldset">
               <legend>Do you recycle?</legend>
               <div>
-                <input type="radio" name="question-1" id="question-1-yes" value="Yes">
+                <input type="radio" name="question-1" id="question-1-yes" value="Yes" class = "yes-no-radio">
                 <label for="question-1-yes">Yes</label>
               </div>
               <div>
-                <input type="radio" name="question-1" id="question-1-no" value="No">
+                <input type="radio" name="question-1" id="question-1-no" value="No" class = "yes-no-radio">
                 <label for="question-1-no">No</label>
               </div>
             </fieldset>
@@ -43,22 +43,20 @@
             <fieldset id="question-2" class="filter-fieldset">
               <legend>Do you drive?</legend>
               <div>
-                <input type="radio" name="question-2" id="question-2-yes" value="Yes">
+                <input type="radio" name="question-2" id="question-2-yes" value="Yes" class = "yes-no-radio">
                 <label for="question-2-yes">Yes</label>
               </div>
               <div>
-                <input type="radio" name="question-2" id="question-2-no" value="No">
+                <input type="radio" name="question-2" id="question-2-no" value="No" class = "yes-no-radio">
                 <label for="question-2-no">No</label>
               </div>
             </fieldset>
           </div>
 
-
-
-          <div class="kilometers-per-week">
-            <label for="kilometers-per-week">How many kilometers do you drive each week?</label>
+          <div class="question-2-followup">
+            <label for="question-2-followup">How many kilometers do you drive each week?</label>
             <div class="variable-input-element">
-              <select id="kilometers-per-week" class="filter-input" name="kilometers-per-week">
+              <select id="question-2-followup" class="filter-input" name="question-2-followup">
                 <option selected value="">Any</option>
                 <option>Less than 10</option>
                 <option>11-20</option>
@@ -66,6 +64,35 @@
                 <option>31-40</option>
                 <option>41-50</option>
                 <option>More than 50</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="question-3">
+            <fieldset id="question-3" class="filter-fieldset">
+              <legend>Do you eat animal products?</legend>
+              <div>
+                <input type="radio" name="question-3" id="question-3-yes" value="Yes">
+                <label for="question-3-yes">Yes</label>
+              </div>
+              <div>
+                <input type="radio" name="question-3" id="question-3-no" value="No">
+                <label for="question-3-no">No</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="question-3-followup">
+            <label for="question-3-followup">How many times a week do you eat meat?</label>
+            <div class="variable-input-element">
+              <select id="question-3-followup" class="filter-input" name="question-3-followup">
+                <option selected value="">Any</option>
+                <option>Less than 10</option>
+                <option>1-3</option>
+                <option>4-6</option>
+                <option>7-9</option>
+                <option>10-12</option>
+                <option>More</option>
               </select>
             </div>
           </div>
