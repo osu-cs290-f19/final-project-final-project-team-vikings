@@ -7,7 +7,7 @@ body {
 
 a {
   text-decoration: none;
-  color: green;
+  color: #93C63B;
 }
 
 a:hover {
@@ -22,7 +22,7 @@ header {
 }
 
 header a {
-  color: green;
+  color: #93C63B;
 }
 
 .action-button:hover {
@@ -32,7 +32,7 @@ header a {
 }
 
 #check-score-button{
-  background-color: #4EC316;
+  background-color: #93C63B;
   width: 30%;
   height: 20%;
 }
@@ -56,7 +56,7 @@ header a {
 .filter-container {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  border: 3px solid #93C63B;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
