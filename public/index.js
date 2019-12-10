@@ -36,7 +36,7 @@ function question2Function(){
 function question3Function(){
 	if(eatAnimals[0].checked){
 		meatFrequency.style.display = 'block';
-				calculateHowGreen();
+		calculateHowGreen();
 	}
 	else if(drive[1].checked){
 		meatFrequency.style.display = 'none';
@@ -53,6 +53,8 @@ function question4Function(){
 }
 
 function calculateHowGreen(){
+	var k;
 	console.log("howGreen: ", drivenResult.value);
-	console.log("index of drive", drivenResult.indexOf(drivenResult.value));
+	console.log("obj.selectedIndex", drivenResult.selectedIndex);
+
 }
