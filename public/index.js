@@ -13,10 +13,13 @@ var driveDistance = document.getElementById('question-2-followup');
 var meatFrequency = document.getElementById('question-3-followup');
 var flyFrequency = document.getElementById('question-4-followup');
 
-//
+//content
 var drivenResult = document.getElementById('question-2-followup-select');
 var meatEaten =  document.getElementById('question-3-followup-select');
 var flyingAmount =  document.getElementById('question-4-followup-select');
+
+//button
+var buttonHandler = document.getElementById('check-score-button');
 
 //eventlistener
 document.getElementById("question-2").addEventListener('input', question2Function);
@@ -51,6 +54,8 @@ function question4Function(){
 		flyFrequency.style.display = 'none';
 	}
 }
+
+buttonHandler.addEventListener('click', calculateHowGreen);
 
 function calculateHowGreen(){
 	var driven = drivenResult.selectedIndex;
