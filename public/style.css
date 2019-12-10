@@ -13,14 +13,14 @@ a:hover {
 }
 
 header {
-  background-color: #000;
+  background-color: white;
   display: flex;
   align-items: center;
   position: relative;
 }
 
 header a {
-  color: orange;
+  color: green;
 }
 
 .site-title {
