@@ -21,27 +21,27 @@ document.getElementById("question-4").addEventListener('input', question4Functio
 //function call on event handler
 function question2Function(){
 	if(drive[0].checked){
-		console.log("==Im printing from inside this function2"); // print
-		//driveDistance.style.display = 'none'; 					 //try and display the second question
-		document.getElementById('question-2').style.display = 'none'; 	//hide the initial question
-		document.getElementById('test123').style.display = 'block';
-		calculateHowGreen();
+		//console.log("==Im printing from inside this function2"); // print
+		driveDistance.style.display = 'block'; 					 //try and display the second question
+		//document.getElementById('question-2').style.display = 'none'; 	//hide the initial question
+		//document.getElementById('question-2-followup').style.display = 'block';
+		//calculateHowGreen();
 	}
 }
 
 function question3Function(){
 	if(eatAnimals[0].checked){
-		console.log("==Im printing from inside this function3");
+		//console.log("==Im printing from inside this function3");
 		meatFrequency.style.display = 'block';
-		document.getElementById('question-3').style.display = 'none';
+		//document.getElementById('question-3').style.display = 'none';
 	}
 }
 
 function question4Function(){
 	if(flying[0].checked){
-		console.log("==Im printing from inside this function4");
+		//console.log("==Im printing from inside this function4");
 		flyFrequency.style.display = 'block';
-		document.getElementById('question-4').style.display = 'none';
+		//document.getElementById('question-4').style.display = 'none';
 	}
 }
 
