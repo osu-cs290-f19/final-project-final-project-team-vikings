@@ -1,6 +1,8 @@
 body {
   font-family: 'Georgia';
   margin: 0;
+  background-image: url('background.png');
+  background-repeat: repeat;
 }
 
 a {
@@ -86,6 +88,6 @@ select:hover{
 	cursor: pointer;
 }
 
-.hidden {
+.followup {
   display: none;
 }

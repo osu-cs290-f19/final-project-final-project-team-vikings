@@ -3,26 +3,46 @@
  */
 
 //initial questions
-var recycle = document.getElementById('question-1');
-var drive = document.getElementById('question-2');
-var eatAnimals = document.getElementById('question-3');
-var flying = document.getElementById('question-4');
+var recycle = document.getElementsByName('question-1');
+var drive = document.getElementsByName('question-2');
+var eatAnimals = document.getElementsByName('question-3');
+var flying = document.getElementsByName('question-4');
 
 //follow up
 var driveDistance = document.getElementById('question-2-followup');
 var meatFrequency = document.getElementById('question-3-followup');
 var flyFrequency = document.getElementById('question-4-followup');
 
-if(recycle[0].checked){
-	//show followup question-1
+
+if(eatAnimals[0].checked){
+	meatFrequency.style.display = 'block';
 }
-else{
-	//nothing
+if(flying[0].checked){
+	flyFrequency.style.display = 'block';
 }
 
-recycle.addEventListener('click', function (event) {
-	if(recycle[0].checked){
+document.getElementById("question-2").addEventListener('input', question2Function);
+document.getElementById("question-3").addEventListener('input', question3Function);
+document.getElementById("question-4").addEventListener('input', question4Function);
+
+
+function question2Function(){
+	if(drive[0].checked){
+		console.log("==Im printing from inside this function2");
 		driveDistance.style.display = 'block';
-		//show followup question-1
 	}
-});
+}
+
+function question3Function(){
+	if(drive[0].checked){
+		console.log("==Im printing from inside this function3");
+		meatFrequency.style.display = 'block';
+	}
+}
+
+function question4Function(){
+	if(drive[0].checked){
+		console.log("==Im printing from inside this function4");
+		flyFrequency.style.display = 'block';
+	}
+}
