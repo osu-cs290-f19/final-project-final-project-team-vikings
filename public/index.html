@@ -24,16 +24,57 @@
 
           <h2>Variables</h2>
 
+          <div class="question-1">
+            <fieldset id="question-1" class="filter-fieldset">
+              <legend>Do you recycle?</legend>
+              <div>
+                <input type="radio" name="question-1" id="question-1-yes" value="Yes">
+                <label for="question-1-yes">Yes</label>
+              </div>
+              <div>
+                <input type="radio" name="question-1" id="question-1-no" value="No">
+                <label for="question-1-no">No</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="question-2">
+            <fieldset id="question-2" class="filter-fieldset">
+              <legend>Do you drive?</legend>
+              <div>
+                <input type="radio" name="questions" id="question-2-yes" value="Yes">
+                <label for="question-2-yes">Yes</label>
+              </div>
+              <div>
+                <input type="radio" name="question-2" id="question-2-no" value="No">
+                <label for="question-2-no">No</label>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div class="kilometers-per-week">
+            <label for="kilometers-per-week">How many kilometers do you drive each week?</label>
+            <div class="variable-input-element">
+              <select id="kilometers-per-week" class="filter-input" name="kilometers-per-week">
+                <option selected value="">Any</option>
+                <option>>10</option>
+                <option>11-20</option>
+                <option>21-30</option>
+                <option>31-40</option>
+                <option>41-50</option>
+                <option>50<</option>
+              </select>
+            </div>
+          </div>
+
+
           <div class="filter-input-container">
             <label for="meat-per-week" class="variable-input-label">How many times a week do you eat meat?</label>
             <div class="variable-input-element">
               <input type="text" name="meat-per-week" id="meat-per-week" class="filter-input" placeholder="Input approximate">
             </div>
-            <label for="km-per-week" class="variable-input-label">How many kilometers do you drive every week?</label>
-            <div class="variable-input-element">
-              <input type="text" name="km-per-week" id="km-per-week" class="filter-input" placeholder="input approximate">
-            </div>
-          </div>
+
 
           <div class="filter-input-container">
             <label for="flights-per-year">How many times a year do you fly?</label>
