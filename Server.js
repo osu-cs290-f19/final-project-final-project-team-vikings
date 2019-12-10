@@ -25,20 +25,10 @@ app.get('/', function (req, res) {
 	res.render('home');
 });
 
-//Path
-/*
-app.get('/', function(req,res, next){
-
-}
-
 app.get('*', function (req, res) {
-  //404
+  res.render('404');
 });
-*/
-function requestHandler(req, res){
-	var pathToHtml = '/public/index.html';
-	readFileHTMLPath(pathToHtml, res);
-	}
+
 
 function readFileHTMLPath(pathToHtml,res) {
 fs.readFile(pathToHtml, 'utf-8',function (err, pathToHtml) {
