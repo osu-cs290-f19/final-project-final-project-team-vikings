@@ -8,10 +8,15 @@ var drive = document.getElementsByName('question-2');
 var eatAnimals = document.getElementsByName('question-3');
 var flying = document.getElementsByName('question-4');
 
-//follow up
+//Hidden
 var driveDistance = document.getElementById('question-2-followup');
 var meatFrequency = document.getElementById('question-3-followup');
 var flyFrequency = document.getElementById('question-4-followup');
+
+//
+var drivenResult = document.getElementById('question-2-followup-select');
+var meatEaten =  document.getElementById('question-3-followup-select');
+var FlyingAmount =  document.getElementById('question-4-followup-select');
 
 //eventlistener
 document.getElementById("question-2").addEventListener('input', question2Function);
@@ -31,6 +36,7 @@ function question2Function(){
 function question3Function(){
 	if(eatAnimals[0].checked){
 		meatFrequency.style.display = 'block';
+				calculateHowGreen();
 	}
 	else if(drive[1].checked){
 		meatFrequency.style.display = 'none';
@@ -47,5 +53,6 @@ function question4Function(){
 }
 
 function calculateHowGreen(){
-	console.log("howGreen: ", driveDistance.value);
+	console.log("howGreen: ", drivenResult.value);
+	console.log("index of drive", drivenResult.indexOf(drivenResult.value));
 }
