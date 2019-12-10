@@ -1,11 +1,28 @@
 /*
- * This file doesn't contain any JS because this assignment is released before
- * the due date of the previous assignment, so I don't want to give you the
- * solution to that assignment yet ;)  You'll know this file was served
- * correctly if you see the alert below in your browser.  Alternatively, you
- * can add your own solution code from the previous assignment here in order
- * to see all of the client-side JS interactions you implemented.
+	client side js
  */
 
-var driveDistance = getElementsByClassName('filter-input');
-console.log("== drive distance: "driveDistance);
+//initial questions
+var recycle = document.getElementById('question-1');
+var drive = document.getElementById('question-2');
+var eatAnimals = document.getElementById('question-3');
+var flying = document.getElementById('question-4');
+
+//follow up
+var driveDistance = document.getElementById('question-2-followup');
+var meatFrequency = document.getElementById('question-3-followup');
+var flyFrequency = document.getElementById('question-4-followup');
+
+if(recycle[0].checked){
+	//show followup question-1
+}
+else{
+	//nothing
+}
+
+recycle.addEventListener('click', function (event) {
+	if(recycle[0].checked){
+		driveDistance.style.display = 'block';
+		//show followup question-1
+	}
+});
