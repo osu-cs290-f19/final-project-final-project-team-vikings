@@ -7,4 +7,5 @@
  * to see all of the client-side JS interactions you implemented.
  */
 
-alert('Not Yet Implemented');
+var driveDistance = getElementsByClassName('filter-input');
+console.log("== drive distance: "driveDistance);
