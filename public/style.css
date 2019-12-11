@@ -16,13 +16,15 @@ a:hover {
 
 header {
   background-color: white;
+  background: transparent;
+
   display: flex;
   align-items: center;
   position: relative;
 }
 
 header a {
-  color: #93C63B;
+  color: black;
 }
 
 .action-button:hover {
@@ -102,8 +104,4 @@ select:hover{
 
 .followup {
   display: none;
-}
-
-.header-image-container img{
-	background: transparent;
 }
