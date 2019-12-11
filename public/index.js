@@ -48,13 +48,16 @@ function calcGreen(){
 	for(var i = 0; i < amountOfStars; i++){
 		stars[i].style.display = 'inline';
 	}
-	//console.log("total points : ", holder);
 }
 
 buttonCloseScore.addEventListener('click', function(){
+var stars = document.getElementsByClassName('image-backdrop');
 	for(var i = 0; i < modal.length; i++){
 		scoreHeader[i].style.display = 'none';
 		scoreBody[i].style.display = 'none';
 		modal[i].style.display = 'none';
+		for(var i = 0; i < 5; i++){
+			stars[i].style.display = 'none';
+		}
 	}
 });
