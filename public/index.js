@@ -4,11 +4,11 @@
 //var initialQuestions = document.getElementsByClassName('question');
 var groupOfFieldset = document.getElementsByClassName('filter-fieldset'); //array of groups of checkboxes (yes/no)=1place
 //content
-var group = document.getElementsByClassName('yes_no_radio'); //group of checksboxes (yes) = 0, (no) = 1... 
+var group = document.getElementsByClassName('yes_no_radio'); //group of checksboxes (yes) = 0, (no) = 1...
 var groupFollowUp = document.getElementsByClassName('followup'); //group of hidden followup questions
 var selectors = document.getElementsByClassName('filter-input'); // selectors used to get index of scroller
 //button
-var buttonHandler = document.getElementById('check-score-button');// check score button 
+var buttonHandler = document.getElementById('check-score-button');// check score button
 var buttonCloseScore = document.getElementById('close-score');
 
 //Modal
@@ -43,7 +43,7 @@ function calcGreen(){
 		scoreBody[i].style.display = 'block';
 		modal[i].style.display = 'block';
 	}
-	var amountOfStars = holder/5;
+	var amountOfStars = 5 - holder/5;
 
 	for(var i = 0; i < amountOfStars; i++){
 		stars[i].style.display = 'inline';
@@ -58,4 +58,3 @@ buttonCloseScore.addEventListener('click', function(){
 		modal[i].style.display = 'none';
 	}
 });
-
