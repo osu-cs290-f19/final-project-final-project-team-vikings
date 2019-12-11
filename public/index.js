@@ -4,7 +4,7 @@
 //var initialQuestions = document.getElementsByClassName('question');
 var groupOfFieldset = document.getElementsByClassName('filter-fieldset'); //array of groups of checkboxes (yes/no)=1place
 //content
-var group = document.getElementsByClassName('yes-no-radio'); //group of checksboxes (yes) = 0, (no) = 1... 
+var group = document.getElementsByClassName('yes_no_radio'); //group of checksboxes (yes) = 0, (no) = 1... 
 var groupFollowUp = document.getElementsByClassName('followup'); //group of hidden followup questions
 var selectors = document.getElementsByClassName('filter-input'); // selectors used to get index of scroller
 //button
