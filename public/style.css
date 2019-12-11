@@ -71,7 +71,7 @@ header a {
 	padding: 10px;
 }
 
-input[type=text], select, fieldset, button {
+.error-container, input[type=text], select, fieldset, button {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -104,4 +104,20 @@ select:hover{
 
 .followup {
   display: none;
+}
+
+.hidden{
+	display: none;
+}
+
+.header-image-container img{
+	height: 200px;
+	width: 200px;
+}
+
+.site-title{
+	font-weight: bold;
+	color: #003300;
+	text-decoration: underline;
+	text-transform: uppercase;
 }
