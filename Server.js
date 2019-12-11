@@ -25,46 +25,11 @@
 app.get('/', function (req, res) {
 	res.render('home',
   {
-    question1:
-    {
-      question: data[0].question,
-      description: data[0].description,
-      question_name: data[0].question_name,
-      question_yes: data[0].question_yes,
-      question_no: data[0].question_no
-    },
-    question2:
-    {
-      question: data[1].question,
-      description: data[1].description,
-      question_name: data[1].question_name,
-      question_yes: data[1].question_yes,
-      question_no: data[1].question_no
-    },
-    question3:
-    {
-      question: data[2].question,
-      description: data[2].description,
-      question_name: data[2].question_name,
-      question_yes: data[2].question_yes,
-      question_no: data[2].question_no
-    },
-    question4:
-    {
-      question: data[3].question,
-      description: data[3].description,
-      question_name: data[3].question_name,
-      question_yes: data[3].question_yes,
-      question_no: data[3].question_no
-    },
-    question5:
-    {
-      question: data[4].question,
-      description: data[4].description,
-      question_name: data[4].question_name,
-      question_yes: data[4].question_yes,
-      question_no: data[4].question_no
-    },
+    question1: data[0],
+    question2: data[1],
+    question3: data[2],
+    question4: data[3],
+    question5: data[4],
     questionData: data
   });
 });
@@ -72,18 +37,6 @@ app.get('/', function (req, res) {
 app.get('*', function (req, res) {
   res.render('404');
 });
-
-
-function readFileHTMLPath(pathToHtml,res) {
-fs.readFile(pathToHtml, 'utf-8',function (err, pathToHtml) {
-	if (err) {
-		throw err;
-	}
-	res.writeHeader(200, {"Content-Type": "text/html"});
-	res.write(pathToHtml);
-	res.end();
-	});
-}
 
 //port
 app.listen(port, function () {

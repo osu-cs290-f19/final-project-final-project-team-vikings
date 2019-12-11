@@ -1,38 +1,37 @@
 [
   {
-    "question": "question-1",
+    "question": "question_1",
     "description": "Do you recycle",
-    "question_name": "question-1",
-    "question_yes": "question-1-yes",
-    "question_no": "question-1-no"
+    "question_name": "question_1_name",
+    "question_yes": "question_1_yes",
+    "question_no": "question_1_no"
   },
   {
-    "question": "question-2",
+    "question": "question_2",
     "description": "Do you drive?",
-    "question_name": "question-2",
-    "question_yes": "question-2-yes",
-    "question_no": "question-2-no"
+    "question_name": "question_2_name",
+    "question_yes": "question_2_yes",
+    "question_no": "question_2_no"
   },
   {
-    "question": "question-3",
+    "question": "question_3",
     "description": "Do you eat animal products?",
-    "question_name": "question-3",
-    "question_yes": "question-3-yes",
-    "question_no": "question-3-no"
+    "question_name": "question_3_name",
+    "question_yes": "question_3_yes",
+    "question_no": "question_3_no"
   },
   {
-    "question": "question-4",
+    "question": "question_4",
     "description": "Do ever fly?",
-    "question_name": "question-4",
-    "question_yes": "question-4-yes",
-    "question_no": "question-4-no"
+    "question_name": "question_4_name",
+    "question_yes": "question_4_yes",
+    "question_no": "question_4_no"
   },
   {
-    "question": "question-5",
+    "question": "question_5",
     "description": "Do you travel a lot?",
-    "question_name": "question-5",
-    "question_yes": "question-5-yes",
-    "question_no": "question-5-no"
+    "question_name": "question_5_name",
+    "question_yes": "question_5_yes",
+    "question_no": "question_5_no"
   }
-
 ]

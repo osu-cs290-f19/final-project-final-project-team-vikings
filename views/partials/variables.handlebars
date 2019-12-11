@@ -1,6 +1,6 @@
   <h2>Questions</h2>
 
-{{> questions question1}}
+ {{> questions question1}}
 
 <div class="followup" id="question-1-followup">
   <label for="question-1-followup">What do you recycle?</label>
@@ -15,7 +15,8 @@
   </div>
 </div>
 
-{{> questions question2}}
+ {{> questions question2}}
+
   <div class="followup" id="question-2-followup">
     <label for="question-2-followup">How many kilometers do you drive each week?</label>
     <div class="variable-input-element">
@@ -49,40 +50,41 @@
     </div>
   </div>
 
-{{> questions question4}}
-<div class="followup" id="question-4-followup">
-  <label for="question-4-followup">How many times a week do you eat meat?</label>
-  <div class="variable-input-element">
-    <select id="question-4-followup-select" class="filter-input" name="question-4-followup">
-      <option selected value="">Any</option>
-      <option>Once a year</option>
-      <option>Twice a year</option>
-      <option>3 times a year</option>
-      <option>4 times a year</option>
-      <option>5 times a year</option>
-      <option>6 times a year</option>
-      <option>7 times a year</option>
-      <option>8 times a year</option>
-      <option>9 times a year</option>
-      <option>10 times or more a year</option>
-    </select>
-  </div>
-
-
-  {{> questions question5}}
-  <div class="followup" id="question-5-followup">
-    <label for="question-5-followup">What is your preferred way of travel?</label>
-    <div class="variable-input-element">
-      <select id="question-5-followup-select" class="filter-input" name="question-5-followup">
-        <option selected value="">Any</option>
-        <option>I walk or take the bike</option>
-        <option>I like to take my electric car</option>
-        <option>I like to drive my hybrid car</option>
-        <option>I like to take my scooter</option>
-        <option>I like to take my regular car</option>
-        <option>I like to take my hummer</option>
-        <option>I like to take my monster truck</option>
-        <option>I like to take my rocket ship</option>
-        <option>I like to drive in circles with my Nascar car before going anywhere</option>
-      </select>
+  {{> questions question4}}
+    <div class="followup" id="question-4-followup">
+      <label for="question-4-followup">Do you ever fly?</label>
+      <div class="variable-input-element">
+        <select id="question-4-followup-select" class="filter-input" name="question-4-followup">
+          <option selected value="">Any</option>
+          <option>Once a year</option>
+          <option>Twice a year</option>
+          <option>3 times a year</option>
+          <option>4 times a year</option>
+          <option>5 times a year</option>
+          <option>6 times a year</option>
+          <option>7 times a year</option>
+          <option>8 times a year</option>
+          <option>9 times a year</option>
+          <option>10 times or more a year</option>
+        </select>
+      </div>
     </div>
+
+    {{> questions question5}}
+      <div class="followup" id="question-5-followup">
+        <label for="question-5-followup">How many times a week do you eat meat?</label>
+        <div class="variable-input-element">
+          <select id="question-5-followup-select" class="filter-input" name="question-5-followup">
+            <option selected value="">Any</option>
+            <option>I walk or take the bike</option>
+            <option>I like to take my electric car</option>
+            <option>I like to drive my hybrid car</option>
+            <option>I like to take my scooter</option>
+            <option>I like to take my regular car</option>
+            <option>I like to take my hummer</option>
+            <option>I like to take my monster truck</option>
+            <option>I like to take my rocket ship</option>
+            <option>I like to drive in circles with my Nascar car before going anywhere</option>
+          </select>
+        </div>
+      </div>
