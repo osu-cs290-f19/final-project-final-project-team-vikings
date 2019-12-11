@@ -60,7 +60,6 @@ function calculateHowGreen(){
 	var driven = drivenResult.selectedIndex;
 	var eaten = meatEaten.selectedIndex;
 	var fly = flyingAmount.value;
-	var k;// = drivenResult.selectedIndex + meatEaten.selectedIndex;// + flyingAmount.value;
-	k = parseInt(driven) + parseInt(eaten) + parseInt(fly);
+	var k = parseInt(driven) + parseInt(eaten) + parseInt(fly);
 	console.log("totalpoints : ", k);	
 }
