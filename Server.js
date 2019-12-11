@@ -38,18 +38,6 @@ app.get('*', function (req, res) {
   res.render('404');
 });
 
-
-function readFileHTMLPath(pathToHtml,res) {
-fs.readFile(pathToHtml, 'utf-8',function (err, pathToHtml) {
-	if (err) {
-		throw err;
-	}
-	res.writeHeader(200, {"Content-Type": "text/html"});
-	res.write(pathToHtml);
-	res.end();
-	});
-}
-
 //port
 app.listen(port, function () {
   console.log("== Server is listening on port", port);
