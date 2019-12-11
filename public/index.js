@@ -11,6 +11,11 @@ var selectors = document.getElementsByClassName('filter-input'); // selectors us
 var buttonHandler = document.getElementById('check-score-button');// check score button 
 var buttonCloseScore = document.getElementById('close-score');
 
+//Modal
+var scoreHeader = document.getElementsByClassName('score-header');
+var scoreBody = document.getElementsByClassName('score-body');
+var modal = document.getElementsByClassName('hidden');
+
 //making eventhandler for all groups of checkboxes
 for(var i = 0; i < groupOfFieldset.length; i++){
 	groupOfFieldset[i].addEventListener('input', questionHandlerFunction);
@@ -32,24 +37,25 @@ function calcGreen(){
 	for(var i = 0; i < groupFollowUp.length-1; i++){
 		holder += parseInt(selectors[i].selectedIndex);
 	}
-	var scoreHeader = document.getElementsByClassName('score-header');
-	var scoreBody = document.getElementsByClassName('score-body');
-	var modal = document.getElementsByClassName('hidden');
+	var stars = document.getElementsByClassName('image-backdrop');
 	for(var i = 0; i < modal.length; i++){
 		scoreHeader[i].style.display = 'block';
 		scoreBody[i].style.display = 'block';
 		modal[i].style.display = 'block';
 	}
-	console.log("total points : ", holder);
+	var amountOfStars = holder/5;
+
+	for(var i = 0; i < amountOfStars; i++){
+		stars[i].style.display = 'inline';
+	}
+	//console.log("total points : ", holder);
 }
 
 buttonCloseScore.addEventListener('click', function(){
-	var scoreHeader = document.getElementsByClassName('score-header');
-	var scoreBody = document.getElementsByClassName('score-body');
-	var modal = document.getElementsByClassName('hidden');
 	for(var i = 0; i < modal.length; i++){
 		scoreHeader[i].style.display = 'none';
 		scoreBody[i].style.display = 'none';
 		modal[i].style.display = 'none';
 	}
 });
+

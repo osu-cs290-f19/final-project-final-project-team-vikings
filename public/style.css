@@ -129,3 +129,10 @@ div .score-body{
 	text-decoration: underline;
 	text-transform: uppercase;
 }
+
+.score-body img{
+	width: 200px;
+	height: 200px;
+	display: none;
+	align-items: center;
+}
