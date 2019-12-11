@@ -15,6 +15,7 @@
  var exphbs = require('express-handlebars');
  var app = express();
  var port = process.env.PORT || 3000;
+ var data = require("./questions");
  var showPage = true;
  app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
  app.set('view engine', 'handlebars');
@@ -22,7 +23,42 @@
 
 
 app.get('/', function (req, res) {
-	res.render('home');
+	res.render('home',
+  {
+    question1:
+    {
+      question: data[0].question,
+      description: data[0].description,
+      question_name: data[0].question_name,
+      question_yes: data[0].question_yes,
+      question_no: data[0].question_no
+    },
+    question2:
+    {
+      question: data[1].question,
+      description: data[1].description,
+      question_name: data[1].question_name,
+      question_yes: data[1].question_yes,
+      question_no: data[1].question_no
+    },
+    question3:
+    {
+      question: data[2].question,
+      description: data[2].description,
+      question_name: data[2].question_name,
+      question_yes: data[2].question_yes,
+      question_no: data[2].question_no
+    },
+    question4:
+    {
+      question: data[3].question,
+      description: data[3].description,
+      question_name: data[3].question_name,
+      question_yes: data[3].question_yes,
+      question_no: data[3].question_no
+    },
+    questionData: data
+  });
 });
 
 app.get('*', function (req, res) {

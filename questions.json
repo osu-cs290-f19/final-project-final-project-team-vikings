@@ -1,0 +1,30 @@
+[
+  {
+    "question": "question-1",
+    "description": "Do you recycle",
+    "question_name": "question-1",
+    "question_yes": "question-1-yes",
+    "question_no": "question-1-no"
+  },
+  {
+    "question": "question-2",
+    "description": "Do you drive?",
+    "question_name": "question-2",
+    "question_yes": "question-2-yes",
+    "question_no": "question-2-no"
+  },
+  {
+    "question": "question-3",
+    "description": "Do you eat animal products?",
+    "question_name": "question-3",
+    "question_yes": "question-3-yes",
+    "question_no": "question-3-no"
+  },
+  {
+    "question": "question-4",
+    "description": "Do ever fly?",
+    "question_name": "question-4",
+    "question_yes": "question-4-yes",
+    "question_no": "question-4-no"
+  }
+]
