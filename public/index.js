@@ -76,7 +76,7 @@ function calcGreen(){
 			howGreenText = "you have got 5 stars, you are doing the best you can for the environment, keep up the good work";
 			break;
 		default:
-			howGreenText = "you have probably been saying no to everything, a true environment-savior";
+			howGreenText = "Cant calculate your score";
 			break;
 	}
 //  console.log("This is a test: " + testVar);
