@@ -110,6 +110,14 @@ select:hover{
 	display: none;
 }
 
+div .score-header{
+	display: none;
+}
+
+div .score-body{
+	display: none;
+}
+
 .header-image-container img{
 	height: 200px;
 	width: 200px;

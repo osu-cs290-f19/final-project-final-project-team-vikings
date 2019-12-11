@@ -31,5 +31,13 @@ function calcGreen(){
 	for(var i = 0; i < groupFollowUp.length-1; i++){
 		holder += parseInt(selectors[i].selectedIndex);
 	}
+	var scoreHeader = document.getElementsByClassName('score-header');
+	var scoreBody = document.getElementsByClassName('score-body');
+	var modal = document.getElementsByClassName('hidden');
+	for(var i = 0; i < modal.length; i++){
+		scoreHeader[i].style.display = 'block';
+		scoreBody[i].style.display = 'block';
+		modal[i].style.display = 'block';
+	}
 	console.log("total points : ", holder);
 }
