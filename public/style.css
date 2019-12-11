@@ -103,3 +103,7 @@ select:hover{
 .followup {
   display: none;
 }
+
+.header-image-container img{
+	background: transparent;
+}
