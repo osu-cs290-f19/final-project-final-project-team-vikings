@@ -17,6 +17,8 @@ var scoreHeader = document.getElementsByClassName('score-header');
 var scoreBody = document.getElementsByClassName('score-body');
 var modal = document.getElementsByClassName('hidden');
 
+var testVar = 0;
+
 //making eventhandler for all groups of checkboxes
 for(var i = 0; i < groupOfFieldset.length; i++){
 	groupOfFieldset[i].addEventListener('input', questionHandlerFunction);
@@ -33,6 +35,7 @@ function questionHandlerFunction(){
 	}
 }
 buttonHandler.addEventListener('click', calcGreen);
+
 function calcGreen(){
 	var holder = 0;
 	for(var i = 0; i < groupFollowUp.length-1; i++){
@@ -44,7 +47,7 @@ function calcGreen(){
 		scoreBody[i].style.display = 'block';
 		modal[i].style.display = 'block';
 	}
-	
+
 	if(holder == 0){
 	var amountOfStars = 5;
 	} else {
@@ -55,9 +58,9 @@ function calcGreen(){
 	for(var i = 0; i < amountOfStars; i++){
 		stars[i].style.display = 'inline';
 	}
-	
+
 	switch(amountOfStars){
-		case 1: 
+		case 1:
 			howGreenText = "you have got 1 star, you really should consider how you can help save the environment";
 			break;
 		case 2:
@@ -76,6 +79,7 @@ function calcGreen(){
 			howGreenText = "you have probably been saying no to everything, a true environment-savior";
 			break;
 	}
+//  console.log("This is a test: " + testVar);
 	alert("how green are you? \n" + howGreenText);
 }
 

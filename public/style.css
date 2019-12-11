@@ -29,6 +29,11 @@ a:hover {
     color: black;
   }
 
+.question-header
+{
+  color: #93C63B;
+}
+
 .action-button:hover {
   background-color: #f9d2b2;
   border-color: #333;

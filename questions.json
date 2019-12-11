@@ -43,7 +43,7 @@
   },
   {
     "question": "question_7",
-    "description": "Do you turn off most electrical devices when you leave your home",
+    "description": "Do you leave any electrical devices on when you leave your home",
     "question_name": "question_7_name",
     "question_yes": "question_7_yes",
     "question_no": "question_7_no"
