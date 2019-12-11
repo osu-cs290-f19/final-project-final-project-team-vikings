@@ -23,11 +23,11 @@ var drivenResult = document.getElementById('question-2-followup-select');
 var meatEaten =  document.getElementById('question-3-followup-select');
 var flyingAmount =  document.getElementById('question-4-followup-select');
 */
-var group = document.getElementsByClassName('yes-no-radio'); //group of checksboxes (yes) = 0, (no) = 1... 
+var group = document.getElementsByClassName('yes_no_radio'); //group of checksboxes (yes) = 0, (no) = 1...
 var groupFollowUp = document.getElementsByClassName('followup'); //group of hidden followup questions
 var selectors = document.getElementsByClassName('filter-input');
 //button
-var buttonHandler = document.getElementById('check-score-button');// check score button 
+var buttonHandler = document.getElementById('check-score-button');// check score button
 
 //eventlistener
 
@@ -97,5 +97,5 @@ function calculateHowGreen(){
 	var eaten = meatEaten.selectedIndex;
 	var fly = flyingAmount.value;
 	var k = parseInt(driven) + parseInt(eaten) + parseInt(fly);
-	console.log("totalpoints : ", k);	
+	console.log("totalpoints : ", k);
 }*/
