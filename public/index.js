@@ -25,7 +25,7 @@ var flyingAmount =  document.getElementById('question-4-followup-select');
 */
 var group = document.getElementsByClassName('yes-no-radio'); //group of checksboxes (yes) = 0, (no) = 1... 
 var groupFollowUp = document.getElementsByClassName('followup'); //group of hidden followup questions
-
+var selectors = document.getElementsByClassName('filter-input');
 //button
 var buttonHandler = document.getElementById('check-score-button');// check score button 
 
@@ -53,6 +53,14 @@ function questionHandlerFunction(){
 			console.log("i/2 : ", i/2);
 		}
 	}
+}
+buttonHandler.addEventListener('click', calcGreen);
+function calcGreen(){
+	var holder = 0;
+	for(var i = 0; i < groupFollowUp.length-1; i++){
+		holder += parseInt(selectors[i].selectedIndex);
+	}
+	console.log("total points : ", holder);
 }
 /*
 function question2Function(){
@@ -82,12 +90,12 @@ function question4Function(){
 	}
 }
 */
-buttonHandler.addEventListener('click', calculateHowGreen);
 
+/*
 function calculateHowGreen(){
 	var driven = drivenResult.selectedIndex;
 	var eaten = meatEaten.selectedIndex;
 	var fly = flyingAmount.value;
 	var k = parseInt(driven) + parseInt(eaten) + parseInt(fly);
 	console.log("totalpoints : ", k);	
-}
+}*/
