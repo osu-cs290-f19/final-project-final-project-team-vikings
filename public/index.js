@@ -40,16 +40,7 @@ function calcGreen(){
 		scoreBody[i].style.display = 'block';
 		modal[i].style.display = 'block';
 	}
-<<<<<<< HEAD
 	console.log("total points : ", holder);
-=======
-	var amountOfStars = 5 - holder/5;
-
-	for(var i = 0; i < amountOfStars; i++){
-		stars[i].style.display = 'inline';
-	}
-	//console.log("total points : ", holder);
->>>>>>> 0c28bec9e5339bc1fd07080496029723122cde1a
 }
 
 buttonCloseScore.addEventListener('click', function(){
