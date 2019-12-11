@@ -15,7 +15,7 @@
   },
   {
     "question": "question_3",
-    "description": "Do you eat animal products?",
+    "description": "Do you eat animal meat?",
     "question_name": "question_3_name",
     "question_yes": "question_3_yes",
     "question_no": "question_3_no"
@@ -33,5 +33,19 @@
     "question_name": "question_5_name",
     "question_yes": "question_5_yes",
     "question_no": "question_5_no"
+  },
+  {
+    "question": "question_6",
+    "description": "Do you feel like you could use less water?",
+    "question_name": "question_6_name",
+    "question_yes": "question_6_yes",
+    "question_no": "question_6_no"
+  },
+  {
+    "question": "question_7",
+    "description": "Do you turn off most electrical devices when you leave your home",
+    "question_name": "question_7_name",
+    "question_yes": "question_7_yes",
+    "question_no": "question_7_no"
   }
 ]

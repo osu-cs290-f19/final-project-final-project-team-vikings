@@ -30,6 +30,8 @@ app.get('/', function (req, res) {
     question3: data[2],
     question4: data[3],
     question5: data[4],
+    question6: data[5],
+    question7: data[6],
     questionData: data
   });
 });
