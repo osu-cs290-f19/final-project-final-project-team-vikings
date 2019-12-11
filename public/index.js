@@ -9,6 +9,7 @@ var groupFollowUp = document.getElementsByClassName('followup'); //group of hidd
 var selectors = document.getElementsByClassName('filter-input'); // selectors used to get index of scroller
 //button
 var buttonHandler = document.getElementById('check-score-button');// check score button 
+var buttonCloseScore = document.getElementById('close-score');
 
 //making eventhandler for all groups of checkboxes
 for(var i = 0; i < groupOfFieldset.length; i++){
@@ -41,3 +42,14 @@ function calcGreen(){
 	}
 	console.log("total points : ", holder);
 }
+
+buttonCloseScore.addEventListener('click', function(){
+	var scoreHeader = document.getElementsByClassName('score-header');
+	var scoreBody = document.getElementsByClassName('score-body');
+	var modal = document.getElementsByClassName('hidden');
+	for(var i = 0; i < modal.length; i++){
+		scoreHeader[i].style.display = 'none';
+		scoreBody[i].style.display = 'none';
+		modal[i].style.display = 'none';
+	}
+});
