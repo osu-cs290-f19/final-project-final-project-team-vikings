@@ -57,6 +57,14 @@ app.get('/', function (req, res) {
       question_yes: data[3].question_yes,
       question_no: data[3].question_no
     },
+    question5:
+    {
+      question: data[4].question,
+      description: data[4].description,
+      question_name: data[4].question_name,
+      question_yes: data[4].question_yes,
+      question_no: data[4].question_no
+    },
     questionData: data
   });
 });
