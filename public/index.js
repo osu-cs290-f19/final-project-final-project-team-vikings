@@ -43,7 +43,7 @@ function calcGreen(){
 		scoreBody[i].style.display = 'block';
 		modal[i].style.display = 'block';
 	}
-	var amountOfStars = holder/5;
+	var amountOfStars = 5 - holder/5;
 
 	for(var i = 0; i < amountOfStars; i++){
 		stars[i].style.display = 'inline';
